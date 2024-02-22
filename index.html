@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>ToDo list app</h1>
+    <template>
+        <li>
+            <header></header>
+            <span class="quantity"></span>
+            <button class="status-btn">done / todo</button>
+            <button class="delete-btn">Delete</button>
+        </li>
+    </template>
+
+
+    <form action="#" method="get" class="form-example" id="taskForm">
+        <div class="form-example">
+            <label for="task">Task:</label>
+            <input type="text" name="task" id="task" required>
+        </div>
+        <div class="form-example">
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="1" min="1">
+        </div>
+        <div class="form-example">
+            <input type="submit" value="Submit" id="knap">
+        </div>
+    </form>
+
+
+    <h3>In progress</h3>
+    <ul id="inProgressList"></ul>
+
+    <h3>Done</h3>
+    <ul id="doneList"></ul>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+
+</html>
